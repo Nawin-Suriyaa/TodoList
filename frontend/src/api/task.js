@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const base_url = "https://todo-list-backend-psi.vercel.app";
+const base_url = "https://todo-list-backend-kappa.vercel.app/";
 
 export const createTask = (id, data) => axios.post(`${base_url}/createtask/${id}`, data);
 
