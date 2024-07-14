@@ -1,0 +1,47 @@
+.tasks-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    max-width: 100%;
+    padding: 10px 10px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.header-left {
+    align-self: flex-start;
+  }
+
+
+.task-form{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.task-button{
+    width: fit-content;
+}
+.task-input{
+    width: 100%;
+    outline :none;
+    border: 1px solid gray;
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 5px 5px;
+}
+.spinner-border{
+    color : rgb(202, 44, 168)
+}
+
+
+@media (max-width: 768px) {
+    .tasks-container {
+        width: 95%;
+    }
+    .task-form{
+        width: 100%;
+    }
+}

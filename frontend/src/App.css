@@ -1,0 +1,12 @@
+.App{
+    background:linear-gradient(45deg, #ff5733, #9e5dc9, #00bcd4);
+    height: fit-content;
+    min-height: 100vh;
+}
+
+
+@media (max-width: 768px) {
+*{
+    font-size: 10px;
+}
+}
