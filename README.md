@@ -35,19 +35,19 @@ Register Page
 ![Alt Text](./frontend/src/assets/images/register.png)
 
 Home Page
-![Alt Text](./frontend/src/assets/images/mainpage.png)
-
-Tasks Added
 ![Alt Text](./frontend/src/assets/images/taskpage.png)
 
+Tasks Added
+![Alt Text](./frontend/src/assets/images/addingTask.png)
+
 Editing Task
-![Alt Text](./frontend/src/assets/images/editpage.png)
+![Alt Text](./frontend/src/assets/images/updatePage.png)
 
 Changing the state of the Task to completed
-![Alt Text](./frontend/src/assets/images/completetask.png)
+![Alt Text](./frontend/src/assets/images/popup.png)
 
 History Page
-![Alt Text](./frontend/src/assets/images/completetask.png)
+![Alt Text](./frontend/src/assets/images/history.png)
   
 
 ## Prerequisites
