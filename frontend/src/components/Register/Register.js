@@ -16,12 +16,10 @@ const Register = () => {
     const onSubmit = (data) => {
         console.log(data);
         dispatch(registerUser(data)) 
+        navigate("/")
     }
 
     useEffect(() => {
-        if (message) {
-            navigate("/")
-        }
         if (error) {
             return
         }

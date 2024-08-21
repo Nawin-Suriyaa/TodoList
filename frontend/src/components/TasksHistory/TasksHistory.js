@@ -1,12 +1,11 @@
 import React, { useEffect } from 'react'
 import { getTasks } from '../../actions/tasks';
 import Task from "../Task/Task"
-import TaskForm from '../TaskForm/TaskForm';
 import { useDispatch, useSelector } from 'react-redux'
-import "./TaskWrapper.css"
+import "./TasksHistory.css"
 import { useNavigate } from 'react-router-dom';
-import historyicon from "../../assets/images/history.jpg";
-const TasksWrapper = () => {
+import backicon from "../../assets/images/back.svg";
+const TasksHistory = () => {
 
   const navigate = useNavigate();
   const dispatch = useDispatch();
@@ -27,28 +26,20 @@ const TasksWrapper = () => {
     dispatch(getTasks(user._id))
   }, [addMsg, updateMsg, deleteMsg, user, dispatch,navigate])
 
-  const getGreeting = () => {
-    const hour = new Date().getHours();
-    if (hour < 12) return 'Good Morning';
-    if (hour < 18) return 'Good Afternoon';
-    return 'Good Evening';
-  };
-
   return (
     <>
-      <div className='tasks-container'>
-        <span className="headingSpan">
-            <h3>Hi {user.firstName} {user.lastName}, {getGreeting()}</h3>
-            <img
-              src={historyicon}
-              width="30"
-              height="30"
-              className="d-inline-block align-top"
-              alt="icon"
-              onClick={() => navigate("/history")}
-            />
+      <div className='tasks-container-history'>
+        <span className="headingSpan-history">
+              <img
+                src={backicon}
+                width="30"
+                height="30"
+                className="d-inline-block align-top headerMargin"
+                alt="icon"
+                onClick={() => navigate("/tasks")}
+              /> &nbsp;&nbsp;&nbsp;
+              <h3 className=''>History</h3>
         </span>
-        <TaskForm />
         {loading === true ? (
 
           <div className="spinner-border" role="status">
@@ -56,7 +47,7 @@ const TasksWrapper = () => {
           </div>
         ) : (tasks&& 
           tasks
-          .filter(task => !task.isComplete)
+          .filter(task => task.isComplete)
           .map(task => (
             <Task task={task} key={task._id} />
           ))
@@ -67,4 +58,4 @@ const TasksWrapper = () => {
   )
 }
 
-export default TasksWrapper
+export default TasksHistory

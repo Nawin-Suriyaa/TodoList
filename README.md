@@ -6,7 +6,7 @@ Todo-List
 
 - [Introduction](#introduction)
 - [Features](#features)
--[Some Images](#some-images)
+- [Some Images](#some-images)
 - [Prerequisites](#prerequisites)
 - [Getting Started](#getting-started)
 - [Usage](#usage)
@@ -14,14 +14,18 @@ Todo-List
 
 ## Introduction
 
-It is a simple Todo-List app , the user can register and login to the app. After login,the user can add,update,delete the tasks.
+It is a Todo-List app. The user can register and login to the app. After login,the user can add tasks and monitor them. Once the task is completed, the user can mark the task as completed which moves the task to history page. At anypoint of time, the user can reopen the task from history page. Meanwhile user can also update and delete the tasks.
 
 ## Features
 
-List key features and functionalities of your project.
+Key features and functionalities of your project.
 
 - Authentication: The user data is secured,only the user can see the tasks he added to the task Manager.Others do not have access to it.
-- CRUD feautre : The user can perform the crud operations like create,update,delete on the tasks easily.
+- CRUD features
+- Login Page
+- Register Page
+- Home Page (Where you can add, update and delete tasks)
+- History Page (Where you can see the completed tasks and also reopen them)
 
 ## Some Images
  Login Page
@@ -40,6 +44,9 @@ Editing Task
 ![Alt Text](./frontend/src/assets/images/editpage.png)
 
 Changing the state of the Task to completed
+![Alt Text](./frontend/src/assets/images/completetask.png)
+
+History Page
 ![Alt Text](./frontend/src/assets/images/completetask.png)
   
 

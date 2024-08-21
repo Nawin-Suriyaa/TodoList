@@ -1,0 +1,30 @@
+.tasks-container-history{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    max-width: 100%;
+    padding: 10px 10px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.headingSpan-history{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.headerMargin{
+    margin-top: 5px
+}
+
+@media (max-width: 768px) {
+    .tasks-container-history{
+        width: 95%;
+    }
+}

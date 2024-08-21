@@ -5,6 +5,7 @@ import Login from './components/Login/Login';
 import Register from './components/Register/Register';
 import NavBar from './components/NavBar/NavBar';
 import TasksWrapper from './components/TasksWrapper/TasksWrapper';
+import TasksHistory from './components/TasksHistory/TasksHistory';
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
             <Route path='/' Component={Login} />
             <Route path='/register' Component={Register} />
             <Route path='/tasks' Component={TasksWrapper} />
+            <Route path='/history' Component={TasksHistory} />
         </Routes>
       </BrowserRouter>
     </div>

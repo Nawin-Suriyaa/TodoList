@@ -42,6 +42,7 @@ const Login = () => {
     }, [user, error,navigate])
 
     return (
+        <div className='contentDiv'>
         <div className="login-container">
             {error && <div className="alert alert-danger error" role="alert">
                 {error} 
@@ -69,6 +70,7 @@ const Login = () => {
                 </button>
             </form>
             <div className='pt-3'>No account ? <span className="highlight" onClick={() => navigate('/register')}>Register</span></div>
+        </div>
         </div>
     );
 };

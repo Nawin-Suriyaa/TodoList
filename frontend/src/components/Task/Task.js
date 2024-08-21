@@ -17,7 +17,9 @@ const Task = ({ task }) => {
   const updateTask2 = () => {
     dispatch(updatedTask(task._id, { task: updatemsg, isComplete: !finished }))
     setFinished(!finished)
-
+    if(!finished){
+      window.alert("Well Done ! On completing your task \""+updatemsg+"\". Please check History tab for completed tasks.")
+    }
   }
 
   return (
