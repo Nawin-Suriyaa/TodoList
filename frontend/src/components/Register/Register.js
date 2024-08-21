@@ -27,6 +27,7 @@ const Register = () => {
 
     }, [message, error, navigate])
     return (
+        <div className='contentDiv'>
         <div className="login-container">
             {error && <div className="alert alert-danger error" role="alert">
                 {error}  {/*display the error */}
@@ -63,6 +64,7 @@ const Register = () => {
                 </button>
             </form>
             <div className='pt-3'>Already have any account ? <span className="highlight" onClick={() => navigate("/")}>  Login</span></div>
+        </div>
         </div>
     )
 }
